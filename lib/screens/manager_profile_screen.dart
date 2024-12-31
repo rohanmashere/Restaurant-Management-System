@@ -247,9 +247,14 @@ class ManagerProfileScreenState extends State<ManagerProfileScreen> {
                           color: const Color.fromARGB(255, 16, 15, 15),
                         ),
                       ),
-                      validator: (value) => value == null || value.isEmpty
-                          ? 'Mobile No is required'
-                          : null,
+                      validator: (value) {
+                        if (value == null ||
+                            !RegExp(r'^[0-9]+$').hasMatch(value.trim()) ||
+                            value.trim().length != 10) {
+                          return 'Please enter a valid number.';
+                        }
+                        return null;
+                      },
                       onSaved: (value) => phone = value!.trim(),
                     )),
                   ],

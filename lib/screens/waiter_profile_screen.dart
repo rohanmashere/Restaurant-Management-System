@@ -332,9 +332,14 @@ class WaiterProfileScreenState extends State<WaiterProfileScreen> {
                           color: const Color.fromARGB(255, 16, 15, 15),
                         ),
                       ),
-                      validator: (value) => value == null || value.isEmpty
-                          ? 'Mobile No is required'
-                          : null,
+                      validator: (value) {
+                        if (value == null ||
+                            !RegExp(r'^[0-9]+$').hasMatch(value.trim()) ||
+                            value.trim().length != 10) {
+                          return 'Please enter a valid number.';
+                        }
+                        return null;
+                      },
                       onSaved: (value) => mobileNo = value!.trim(),
                     )),
                   ],
@@ -362,9 +367,13 @@ class WaiterProfileScreenState extends State<WaiterProfileScreen> {
                             color: const Color.fromARGB(255, 16, 15, 15),
                           ),
                         ),
-                        validator: (value) => value == null || value.isEmpty
-                            ? 'password is required'
-                            : null,
+                        validator: (value) {
+                          password = value;
+                          if (value == null || value.trim().length < 6) {
+                            return 'Password must be at least 6 characters long.';
+                          }
+                          return null;
+                        },
                         onSaved: (value) => password = value!.trim(),
                       ),
                     ),

@@ -136,6 +136,7 @@ class ResetPasswordScreenState extends State<ResetPasswordScreen> {
                         style: GoogleFonts.lato(
                           color: Colors.white,
                           fontSize: 15,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
