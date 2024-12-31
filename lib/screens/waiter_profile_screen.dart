@@ -11,10 +11,10 @@ class WaiterProfileScreen extends StatefulWidget {
   final String waiterIdentifier;
 
   const WaiterProfileScreen({
-    Key? key,
+    super.key,
     required this.userId,
     required this.waiterIdentifier,
-  }) : super(key: key);
+  });
 
   @override
   WaiterProfileScreenState createState() => WaiterProfileScreenState();
