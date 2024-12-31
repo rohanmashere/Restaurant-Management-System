@@ -22,10 +22,10 @@ PDF and Printing Support: The app allows users to print their bills or other doc
 
 
 ## Project Structure
-lib/: Contains the Dart files for the app's functionality.
-  main.dart: The entry point of the app, responsible for initializing Firebase and launching the main app UI.
-  models/: Contains data models for MenuItem, Waiter, AppTable, etc.
-  services/: Contains services like Firebase authentication, database management, etc.
-  screens/: Contains the UI of the app's different screens.
-  widgets/: Contains reusable widget components.
+lib/: Contains the Dart files for the app's functionality.                                                                                    
+  main.dart: The entry point of the app, responsible for initializing Firebase and launching the main app UI.             
+  models/: Contains data models for MenuItem, Waiter, AppTable, etc.                             
+  services/: Contains services like Firebase authentication, database management, etc.                                
+  screens/: Contains the UI of the app's different screens.                            
+  widgets/: Contains reusable widget components.                                                                
   assets/: Contains images and fonts used in the app. This includes custom fonts like Lato and various images for the splash screen and branding.
