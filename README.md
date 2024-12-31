@@ -23,6 +23,7 @@ The app facilitates efficient management of restaurant operations, providing dis
 
 
 ## Screenshots
+https://github.com/user-attachments/assets/abbddf39-61c2-4c7f-88e5-0ceebd947abb
 
 
 ## Project Structure
