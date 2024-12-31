@@ -22,6 +22,9 @@ The app facilitates efficient management of restaurant operations, providing dis
 * PDF and Printing Support: The app allows users to print their bills or other documents via the PDF and Printing packages.
 
 
+## Screenshots
+
+
 ## Project Structure
 > lib/: Contains the Dart files for the app's functionality.                                                                                    
     -main.dart: The entry point of the app, responsible for initializing Firebase and launching the main app UI.             
