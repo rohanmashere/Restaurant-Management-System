@@ -29,6 +29,13 @@ lib/: Contains the Dart files for the app's functionality.
   services/: Contains services like Firebase authentication, database management, etc.                                
   screens/: Contains the UI of the app's different screens.      
 
+## Technologies Used
+Flutter: Framework for building natively compiled applications across mobile, web, and desktop.
+Firebase Firestore: NoSQL cloud database with real-time data sync, ensuring instant updates across devices.
+Firebase Authentication: Secure authentication service for managing user logins.
+Google Fonts: Custom fonts for enhancing UI design.
+Material Design: UI design system for a modern, intuitive interface.
+Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.
 
 
 ## Prerequisites
