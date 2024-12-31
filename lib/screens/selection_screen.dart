@@ -106,107 +106,109 @@ class SelectionScreenState extends State<SelectionScreen> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: Stack(
-          children: [
-            Align(
-              alignment: Alignment.topCenter,
-              child: Image.asset(
-                'assets/welcome_top_shape.png',
-                fit: BoxFit.cover,
-                width: double.infinity,
+        body: SingleChildScrollView(
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.topCenter,
+                child: Image.asset(
+                  'assets/welcome_top_shape.png',
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                ),
               ),
-            ),
-            Center(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  SizedBox(height: 200),
-                  Image.asset(
-                    'assets/appLogo-removebg-preview.png',
-                    height: 250,
-                  ),
-                  Text(
-                    'WELCOME',
-                    style: GoogleFonts.lato(
-                      color: const Color.fromARGB(255, 74, 2, 2),
-                      fontSize: 55,
-                      fontWeight: FontWeight.bold,
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SizedBox(height: 240),
+                    Image.asset(
+                      'assets/appLogo-removebg-preview.png',
+                      height: 250,
                     ),
-                  ),
-                  Text(
-                    'Every Day is an',
-                    style: GoogleFonts.poppins(
-                      color: const Color.fromARGB(255, 74, 2, 2),
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                    Text(
+                      'WELCOME',
+                      style: GoogleFonts.lato(
+                        color: const Color.fromARGB(255, 74, 2, 2),
+                        fontSize: 55,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  Text(
-                    'Opportunity to Grow..!',
-                    style: GoogleFonts.poppins(
-                      color: const Color.fromARGB(255, 74, 2, 2),
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                    Text(
+                      'Every Day is an',
+                      style: GoogleFonts.poppins(
+                        color: const Color.fromARGB(255, 74, 2, 2),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                  Container(
-                    padding: EdgeInsets.all(20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: OutlinedButton(
-                            style: OutlinedButton.styleFrom(
-                              shape: RoundedRectangleBorder(),
-                              side: BorderSide(
-                                color: Colors.black,
+                    Text(
+                      'Opportunity to Grow..!',
+                      style: GoogleFonts.poppins(
+                        color: const Color.fromARGB(255, 74, 2, 2),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(),
+                                side: BorderSide(
+                                  color: Colors.black,
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  vertical: 15,
+                                ),
                               ),
-                              padding: EdgeInsets.symmetric(
-                                vertical: 15,
-                              ),
-                            ),
-                            onPressed: manager,
-                            child: Text(
-                              'MANAGER',
-                              style: GoogleFonts.poppins(
-                                color: Colors.black,
-                                fontSize: 17,
-                                fontWeight: FontWeight.w600,
+                              onPressed: manager,
+                              child: Text(
+                                'MANAGER',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: OutlinedButton(
-                            style: OutlinedButton.styleFrom(
-                              shape: RoundedRectangleBorder(),
-                              side: BorderSide(
-                                color: Colors.black,
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(),
+                                side: BorderSide(
+                                  color: Colors.black,
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  vertical: 15,
+                                ),
                               ),
-                              padding: EdgeInsets.symmetric(
-                                vertical: 15,
-                              ),
-                            ),
-                            onPressed: waiter,
-                            child: Text(
-                              'WAITER',
-                              style: GoogleFonts.poppins(
-                                color: Colors.black,
-                                fontSize: 17,
-                                fontWeight: FontWeight.w600,
+                              onPressed: waiter,
+                              child: Text(
+                                'WAITER',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

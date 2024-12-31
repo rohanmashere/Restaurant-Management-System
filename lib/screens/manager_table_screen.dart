@@ -13,6 +13,7 @@ class ManagerTableScreen extends ConsumerStatefulWidget {
 }
 
 class ManagerTableScreenState extends ConsumerState<ManagerTableScreen> {
+  // ignore: unused_field
   late Future<List<dynamic>> _userTables;
 
   @override

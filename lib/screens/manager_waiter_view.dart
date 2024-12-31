@@ -14,10 +14,10 @@ class ManagerWaiterView extends StatefulWidget {
   });
 
   @override
-  _ManagerWaiterViewState createState() => _ManagerWaiterViewState();
+  ManagerWaiterViewState createState() => ManagerWaiterViewState();
 }
 
-class _ManagerWaiterViewState extends State<ManagerWaiterView> {
+class ManagerWaiterViewState extends State<ManagerWaiterView> {
   final _formKey = GlobalKey<FormState>();
   late String name;
   late String username;
@@ -27,17 +27,15 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
   @override
   void initState() {
     super.initState();
-    // Initialize fields with current waiter data
     name = widget.waiter.name;
     username = widget.waiter.username;
     mobileNo = widget.waiter.mobileNo;
-    password = widget.waiter.password ?? '';
+    password = widget.waiter.password;
   }
 
   Future<void> _saveChanges(BuildContext context) async {
     if (_formKey.currentState!.validate()) {
       try {
-        // Create the updated waiter object with the new data
         Waiter updatedWaiter = Waiter(
           name: name,
           username: username,
@@ -45,30 +43,19 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
           password: password,
         );
 
-        // Get the reference to the user's document in Firestore
         var userDocRef =
             FirebaseFirestore.instance.collection('users').doc(widget.userId);
 
-        // Fetch the existing waiter data
         var userSnapshot = await userDocRef.get();
 
         if (userSnapshot.exists) {
           var userData = userSnapshot.data();
-
-          // Get the existing waiters list from the user document
           List waitersList = userData?['waiters'] ?? [];
-
-          // Find the specific waiter in the list based on the username (or another unique field)
-          var index = waitersList.indexWhere((waiter) =>
-              waiter['username'] ==
-              widget.waiter
-                  .username); // Find the waiter by username (or other unique field)
+          var index = waitersList.indexWhere(
+              (waiter) => waiter['username'] == widget.waiter.username);
 
           if (index != -1) {
-            // Replace the old waiter data with the updated waiter data
             waitersList[index] = updatedWaiter.toMap();
-
-            // Now update the entire waiters list in Firestore with the modified list
             await userDocRef.update({
               'waiters': waitersList,
             });
@@ -78,7 +65,7 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                 content: Text('Changes saved successfully'),
               ),
             );
-            Navigator.pop(context); // Go back to the previous screen
+            Navigator.pop(context);
           }
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -141,15 +128,13 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
           FocusScope.of(context).unfocus();
         },
         child: SingleChildScrollView(
-          // Wrap the entire body with SingleChildScrollView
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Form(
-              key: _formKey, // Form key to handle validation
+              key: _formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Name Field
                   Row(
                     children: [
                       const Icon(
@@ -181,8 +166,6 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                     ],
                   ),
                   const SizedBox(height: 10),
-
-                  // Username Field
                   Row(
                     children: [
                       const Icon(Icons.account_circle,
@@ -211,8 +194,6 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                     ],
                   ),
                   const SizedBox(height: 10),
-
-                  // Mobile No Field
                   Row(
                     children: [
                       const Icon(
@@ -249,8 +230,6 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                     ],
                   ),
                   const SizedBox(height: 10),
-
-                  // Password Field
                   Row(
                     children: [
                       const Icon(
@@ -261,9 +240,9 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: TextFormField(
-                          initialValue: widget.waiter.password ?? '',
+                          initialValue: widget.waiter.password,
                           onChanged: (value) => password = value,
-                          obscureText: false, // Set to true to hide password
+                          obscureText: false,
                           style: GoogleFonts.lato(
                             fontSize: 18,
                             color: const Color.fromARGB(255, 90, 57, 44),
@@ -282,9 +261,7 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                       ),
                     ],
                   ),
-
                   const SizedBox(height: 20),
-
                   Row(
                     children: [
                       SizedBox(width: 5),
@@ -307,8 +284,6 @@ class _ManagerWaiterViewState extends State<ManagerWaiterView> {
                         ),
                       ),
                       const SizedBox(width: 24),
-
-                      // Remove Waiter Button
                       Align(
                         alignment: Alignment.centerRight,
                         child: ElevatedButton(
