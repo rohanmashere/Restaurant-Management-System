@@ -1,7 +1,8 @@
 ## Restaurant Management App
 ## Overview
-Delight Corner is a comprehensive restaurant management application built using Flutter. It facilitates efficient management of restaurant operations, providing distinct functionalities for both managers and waiters. The app is designed to streamline tasks, from managing tables and menus to tracking orders and generating invoices, ensuring a seamless dining experience. By integrating Firebase, the app can leverage various Firebase services to manage data, authenticate users, and monitor app performance. Firebase plays a crucial role in enhancing the app's functionality and user experience.
+This is a comprehensive restaurant management application built using Flutter. Designed for seamless offline order management in restaurants, it ensures efficient handling of orders, tables, and menus without requiring constant internet connectivity. By integrating Firebase, the app leverages various services to manage data, authenticate users, and monitor app performance, enhancing overall functionality and user experience.
 
+The app facilitates efficient management of restaurant operations, providing distinct functionalities for both managers and waiters. Delight Corner is designed to streamline tasks, from managing tables and menus to tracking orders and generating invoices, ensuring a seamless dining experience even in offline mode.
 
 ## Features
 User Authentication: Users can sign up and log in using email/password authentication, allowing them to securely access their accounts and manage orders.
