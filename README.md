@@ -35,7 +35,14 @@ PDF and Printing Support: The app allows users to print their bills or other doc
 * Firebase Authentication: Secure authentication service for managing user logins.                                                     
 * Google Fonts: Custom fonts for enhancing UI design.                                                                                             
 * Material Design: UI design system for a modern, intuitive interface.                                                         
-* Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.                                    
+* Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.
+
+## Contributing
+Fork the repository.                                                                                             
+Create a new branch (git checkout -b feature-xyz).                                                              
+Make changes and commit (git commit -am 'Add feature xyz').                                                     
+Push to the branch (git push origin feature-xyz).                                                                  
+Open a pull request.                                                                                                           
 
 
 ## Prerequisites
