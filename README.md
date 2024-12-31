@@ -1,16 +1,3 @@
-,# restaurant-management-system
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##Restaurant Management App
+Overview
+Delight Corner is a comprehensive restaurant management application built using Flutter. By integrating Firebase, the app can leverage various Firebase services to manage data, authenticate users, and monitor app performance. Firebase plays a crucial role in enhancing the app's functionality and user experience. It facilitates efficient management of restaurant operations, providing distinct functionalities for both managers and waiters. The app is designed to streamline tasks, from managing tables and menus to tracking orders and generating invoices, ensuring a seamless dining experience.
