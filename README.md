@@ -27,6 +27,16 @@ lib/: Contains the Dart files for the app's functionality.
   main.dart: The entry point of the app, responsible for initializing Firebase and launching the main app UI.             
   models/: Contains data models for MenuItem, Waiter, AppTable, etc.                             
   services/: Contains services like Firebase authentication, database management, etc.                                
-  screens/: Contains the UI of the app's different screens.                            
+  screens/: Contains the UI of the app's different screens.      
+
+
+
+## Prerequisites
+Flutter: Make sure you have Flutter SDK installed. You can follow the official installation guide.
+Firebase Project: Create a Firebase project and set up Firebase Authentication, Firestore, and Firebase Storage.
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
   widgets/: Contains reusable widget components.                                                                
   assets/: Contains images and fonts used in the app. This includes custom fonts like Lato and various images for the splash screen and branding.
