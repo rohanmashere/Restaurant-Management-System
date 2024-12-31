@@ -158,13 +158,14 @@ class ManagerCheckoutScreenState extends State<ManagerCheckoutScreen> {
       final pdf = pw.Document();
       final now = DateTime.now();
       final date = '${now.day}/${now.month}/${now.year}';
-      final latoRegular =
-          pw.Font.ttf(await rootBundle.load('assets/fonts/Lato-Regular.ttf'));
+      final latoRegular = pw.Font.ttf(
+        await rootBundle.load('assets/fonts/Lato-Regular.ttf'),
+      );
       if (orderDetails.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-              content:
-                  Text('No items in the order. Cannot generate the bill.')),
+            content: Text('No items in the order. Cannot generate the bill.'),
+          ),
         );
         return;
       }
@@ -217,7 +218,9 @@ class ManagerCheckoutScreenState extends State<ManagerCheckoutScreen> {
         itemNames.add(order['name']);
         itemQuantities.add(order['quantity']);
         itemRates.add(order['price']);
-        itemTotals.add(order['quantity'] * order['price']);
+        itemTotals.add(
+          order['quantity'] * order['price'],
+        );
       }
 
       pdf.addPage(
@@ -289,7 +292,9 @@ class ManagerCheckoutScreenState extends State<ManagerCheckoutScreen> {
                     children: [
                       pw.TextSpan(
                         text: 'Invoice No: ',
-                        style: pw.TextStyle(fontSize: 14),
+                        style: pw.TextStyle(
+                          fontSize: 14,
+                        ),
                       ),
                       pw.TextSpan(
                         text: invoiceNumber,
