@@ -30,12 +30,12 @@ PDF and Printing Support: The app allows users to print their bills or other doc
   -screens/: Contains the UI of the app's different screens.      
 
 ## Technologies Used
-*Flutter: Framework for building natively compiled applications across mobile, web, and desktop.                                       
-*Firebase Firestore: NoSQL cloud database with real-time data sync, ensuring instant updates across devices.                               
-*Firebase Authentication: Secure authentication service for managing user logins.                                                     
-*Google Fonts: Custom fonts for enhancing UI design.                                                                                             
-*Material Design: UI design system for a modern, intuitive interface.                                                         
-*Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.                                    
+* Flutter: Framework for building natively compiled applications across mobile, web, and desktop.                                       
+* Firebase Firestore: NoSQL cloud database with real-time data sync, ensuring instant updates across devices.                               
+* Firebase Authentication: Secure authentication service for managing user logins.                                                     
+* Google Fonts: Custom fonts for enhancing UI design.                                                                                             
+* Material Design: UI design system for a modern, intuitive interface.                                                         
+* Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.                                    
 
 
 ## Prerequisites
@@ -45,5 +45,4 @@ Firebase Project: Create a Firebase project and set up Firebase Authentication, 
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
-  widgets/: Contains reusable widget components.                                                                
-  assets/: Contains images and fonts used in the app. This includes custom fonts like Lato and various images for the splash screen and branding.
+
