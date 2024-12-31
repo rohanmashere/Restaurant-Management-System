@@ -1,4 +1,4 @@
-,# delight_corner
+,# restaurant-management-system
 
 A new Flutter project.
 
