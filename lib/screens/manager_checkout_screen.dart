@@ -140,6 +140,7 @@ class ManagerCheckoutScreenState extends State<ManagerCheckoutScreen> {
           });
         }
       });
+      // ignore: empty_catches
     } catch (e) {}
   }
 

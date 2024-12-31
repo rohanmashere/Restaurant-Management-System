@@ -196,6 +196,7 @@ class BillHistoryScreenState extends State<BillHistoryScreen> {
                                     fontWeight: FontWeight.w700),
                               ),
                               trailing: Text(
+                                // ignore: unnecessary_string_interpolations
                                 '${formatTimestamp(bill['timestamp'])}',
                                 style: GoogleFonts.lato(
                                     fontSize: 14,
