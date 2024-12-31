@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "558320465748",
+    "project_id": "flutter-delight-corner",
+    "storage_bucket": "flutter-delight-corner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558320465748:android:db592aba68d9713e3afac1",
+        "android_client_info": {
+          "package_name": "com.delight.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5v0IY3mXSb0wbkJpnM6r-NAG11QTkROM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558320465748:android:1396630951886d413afac1",
+        "android_client_info": {
+          "package_name": "com.example.delight_corner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5v0IY3mXSb0wbkJpnM6r-NAG11QTkROM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
