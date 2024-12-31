@@ -5,7 +5,7 @@ This is a comprehensive restaurant management application built using Flutter. D
 The app facilitates efficient management of restaurant operations, providing distinct functionalities for both managers and waiters. Delight Corner is designed to streamline tasks, from managing tables and menus to tracking orders and generating invoices, ensuring a seamless dining experience even in offline mode.
 
 ## Features
-User Authentication: Users can sign up and log in using email/password authentication, allowing them to securely access their accounts and manage orders.
+User Authentication: Users can sign up and log in using email/password authentication, allowing them to securely access their accounts and manage orders.    
 
 Menu Management: The app allows users to view and interact with a dynamic menu of items. They can add and remove items to their cart, view prices, and place orders.
 
@@ -30,12 +30,12 @@ lib/: Contains the Dart files for the app's functionality.
   screens/: Contains the UI of the app's different screens.      
 
 ## Technologies Used
-Flutter: Framework for building natively compiled applications across mobile, web, and desktop.
-Firebase Firestore: NoSQL cloud database with real-time data sync, ensuring instant updates across devices.
-Firebase Authentication: Secure authentication service for managing user logins.
-Google Fonts: Custom fonts for enhancing UI design.
-Material Design: UI design system for a modern, intuitive interface.
-Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.
+Flutter: Framework for building natively compiled applications across mobile, web, and desktop.                                       
+Firebase Firestore: NoSQL cloud database with real-time data sync, ensuring instant updates across devices.                               
+Firebase Authentication: Secure authentication service for managing user logins.                                                     
+Google Fonts: Custom fonts for enhancing UI design.                                                                                             
+Material Design: UI design system for a modern, intuitive interface.                                                         
+Firebase Real-Time Data Sync: Automatic real-time updates across devices, ensuring data consistency.                                    
 
 
 ## Prerequisites
