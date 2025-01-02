@@ -24,7 +24,7 @@ The app facilitates efficient management of restaurant operations, providing dis
 
 ## Screenshots
 
-<img src="" width="150" height="280">
+<img src="file:///C:/Users/rohan/CrossDevice/Rohan%20Vivo%201938/storage/DCIM/Screenshots/Screenshot_20241231_202021.jpg" width="150" height="280">
 ![Screenshot_20241231_202021](https://github.com/user-attachments/assets/ff14efdb-3110-4fc1-98df-9b7ea2b23a11)   ![Screenshot_20241231_202030](https://github.com/user-attachments/assets/acda39c8-27c5-407a-abb4-921256f1bd2e)
 ![Screenshot_20241231_202034](https://github.com/user-attachments/assets/be14d0a1-6829-44a2-bb48-0c8273bae766)  ![Screenshot_20241231_202139](https://github.com/user-attachments/assets/a2a064cb-8918-4b4f-bdae-163880c6fc60)
 
