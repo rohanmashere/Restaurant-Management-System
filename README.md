@@ -24,7 +24,7 @@ The app facilitates efficient management of restaurant operations, providing dis
 
 ## Screenshots
 
-<img src="[https://github.com/user-attachments/assets/ff14efdb-3110-4fc1-98df-9b7ea2b23a11)](https://private-user-images.githubusercontent.com/147073664/399622746-ff14efdb-3110-4fc1-98df-9b7ea2b23a11.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzU3OTc1NDUsIm5iZiI6MTczNTc5NzI0NSwicGF0aCI6Ii8xNDcwNzM2NjQvMzk5NjIyNzQ2LWZmMTRlZmRiLTMxMTAtNGZjMS05OGRmLTliN2VhMmIyM2ExMS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEwMlQwNTU0MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MDgwZWY4NzYzZjk4MWVhYTRjYWE2Y2JkM2MyZjc4ZmY3ZTA0YjY0MjlmNzcyOGE0NDFiNTUyOTJkYWYwNmMyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tJjwoB7FAEOATkQwt5DTU7KDr5eo76VBRDszFKPv3Ag)" width="150" height="280">
+<img src="" width="150" height="280">
 ![Screenshot_20241231_202021](https://github.com/user-attachments/assets/ff14efdb-3110-4fc1-98df-9b7ea2b23a11)   ![Screenshot_20241231_202030](https://github.com/user-attachments/assets/acda39c8-27c5-407a-abb4-921256f1bd2e)
 ![Screenshot_20241231_202034](https://github.com/user-attachments/assets/be14d0a1-6829-44a2-bb48-0c8273bae766)  ![Screenshot_20241231_202139](https://github.com/user-attachments/assets/a2a064cb-8918-4b4f-bdae-163880c6fc60)
 
